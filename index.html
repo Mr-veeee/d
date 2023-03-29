@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Message Encode and Decode</title>
+</head>
+<body>
+	<h1>ENCODE DECODE by VG</h1>
+	<h2>Venkatesh Guttula</h2>
+	<form method="post">
+		<label for="message">MESSAGE:</label>
+		<input type="text" name="message" id="message"><br><br>
+		<label for="private_key">KEY:</label>
+		<input type="text" name="private_key" id="private_key"><br><br>
+		<label for="mode">MODE(e-encode, d-decode):</label>
+		<input type="text" name="mode" id="mode"><br><br>
+		<input type="submit" value="RESULT"><br><br>
+	</form>
+	{% if result %}
+		<label for="result">RESULT:</label>
+		<input type="text" name="result" id="result" value="{{ result }}" readonly><br><br>
+	{% endif %}
+</body>
+</html>
